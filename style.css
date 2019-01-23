@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-image: url(wheat.png);
+}
+
+.page-header {
+    background: rgb(190, 120, 120);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-attr, #btn-attr {
+    background:rgb(190, 120, 120);
+    font: whitesmoke;
+}
