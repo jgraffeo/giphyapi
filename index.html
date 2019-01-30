@@ -6,32 +6,20 @@
   <title>GIPHY API!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
 
 
-    <div class="container">
+    <div class="container header">
       <div class="page-header">
-        <h1>Search Topics!</h1>
+        <h1 class="shadow p-2 mb-4 rounded">Search Topics!</h1>
       </div>
       <br>
-        <div class="row">
-
-          <div class="col-sm" id="button-area">
-            <button class="btn-attr" data-topic="music">Music</button>
-            <button class="btn-attr" data-topic="hiking">Hiking</button>
-            <button class="btn-attr" data-topic="cycling">Cycling</button>
-            <button class="btn-attr" data-topic="backpacking">Backpacking</button>
-          </div>
+        <div class="row" id="divprops">
 
           <div class="col-sm">
-            <div id="gifsgohere"></div>
-          </div>
-
-          <div class="col-sm">
-
-            <form role="form">
+             <form role="form">
               <div class="form-group">
                 <label for="search">Search Topic:</label><br>
                 <input type="text" class="form-control" id="search-term">
@@ -40,7 +28,13 @@
               <button type="submit" class="btn btn-default btn-attr" id="run-search">
                 <i class="fa fa-search"></i> Search</button>
             </form>  
+          </div>
 
+          <div class="col-sm">
+            <div id="gifsgohere"></div>
+          </div>
+
+          <div class="col-sm" id="button-area">
           </div>
         </div>
       </div>
