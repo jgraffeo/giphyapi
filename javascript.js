@@ -23,16 +23,20 @@ function appendButtons (buttonTopics) {
 
 appendButtons(topics);
 
-//adding click event listener to all buttons
-$(".btn-attr").on("click", function() {
+function addClickHandler () {
+  //adding click event listener to all buttons
+  $(".btn-attr").on("click", function() {
 
-//grabbing and storing data-topic property from button
-  var originalTopic = $(this).attr("data-topic");
-//An array of strings with topics
+  //grabbing and storing data-topic property from button
+    var originalTopic = $(this).attr("data-topic");
+  //An array of strings with topics
 
-  searchAndDisplay(originalTopic);
+    searchAndDisplay(originalTopic);
 
-});
+  });
+}
+
+addClickHandler();
 
 //Run search function
 $("#run-search").on("click", function(event) {
@@ -52,6 +56,8 @@ $("#run-search").on("click", function(event) {
 
   //run appendButtons function using topics array
   appendButtons(topics);
+
+  addClickHandler();
 
 });
 
